@@ -6,29 +6,41 @@
   <meta name="description" content="Personal Branding Vicky Satria Lindy - Content Creator">
   <title>Vicky Satria Lindy | Content Creator</title>
   <style>
-    /* Gaya untuk header */
+    /* Styling untuk header terpisah dan terkunci */
     header {
       background-color: #333;
       color: white;
-      padding: 20px;
-      transition: all 0.3s ease-in-out; /* Animasi untuk header */
-      cursor: pointer; /* Tambahkan cursor pointer agar menunjukkan bahwa header bisa diklik */
-    }
-
-    header.clicked {
-      padding: 40px; /* Perbesar padding saat diklik untuk efek slide */
-    }
-
-    header nav {
-      display: none; /* Sembunyikan navigasi awal */
+      padding: 20px 0;
+      width: 100%;
+      position: fixed; /* Mengunci header di atas */
+      top: 0;
+      left: 0;
+      z-index: 1000; /* Pastikan header berada di atas konten lainnya */
+      box-sizing: border-box;
       transition: all 0.3s ease-in-out;
     }
 
-    header.clicked nav {
-      display: block; /* Tampilkan navigasi setelah diklik */
+    /* Gaya untuk judul header */
+    header h1 {
+      text-align: center;
+      margin: 0;
     }
 
-    /* Gaya untuk navigasi */
+    /* Menampilkan navigasi dalam box setelah header diklik */
+    header nav {
+      display: none;
+      text-align: center;
+    }
+
+    /* Membuat efek box dan perubahan warna ketika header diklik */
+    header.clicked {
+      background-color: #444; /* Warna baru saat diklik */
+    }
+
+    header.clicked nav {
+      display: block;
+    }
+
     header nav a {
       color: white;
       margin: 10px;
@@ -37,6 +49,11 @@
 
     header nav a:hover {
       text-decoration: underline;
+    }
+
+    /* Menambahkan margin untuk body agar konten tidak tertutup header */
+    body {
+      margin-top: 100px; /* Beri jarak pada bagian atas konten */
     }
 
     /* Styling untuk Hero Section */
@@ -94,20 +111,12 @@
       <a href="#portfolio" class="cta-btn">Cek Portofolio Saya</a>
     </div>
   </section>
-<!-- About Section -->
-<section id="about" class="about">
-  <h2>Tentang Saya</h2>
-  <p>Saya adalah Vicky Satria Lindy, seorang content creator dengan pengalaman dalam menciptakan konten digital untuk berbagai platform. Fokus saya adalah membantu bisnis dan individu untuk berkembang melalui konten yang kreatif dan menarik.</p>
-  <p><strong>Mimpi Saya:</strong></p>
-  <ul>
-    <li>Menjadi miliarder dalam waktu 5 tahun.</li>
-    <li>Berbelanja tanpa melihat harga.</li>
-    <li>Membantu semua orang yang membutuhkan.</li>
-    <li>Menciptakan lapangan kerja yang profesional.</li>
-  </ul>
-  <p>Mimpi ini saya tetapkan pada 09/05/2025 sebagai motivasi untuk terus berkembang dan memberikan dampak positif kepada orang lain.</p>
-</section>
 
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah Vicky Satria Lindy, seorang content creator dengan pengalaman dalam menciptakan konten digital untuk berbagai platform. Fokus saya adalah membantu bisnis dan individu untuk berkembang melalui konten yang kreatif dan menarik.</p>
+  </section>
 
   <!-- Services Section -->
   <section id="services" class="services">
@@ -155,6 +164,7 @@
   </footer>
 
   <script>
+    // Menambahkan event listener untuk klik pada header
     document.getElementById("header").addEventListener("click", function() {
       this.classList.toggle("clicked");
     });
