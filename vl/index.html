@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -7,12 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal Branding Vicky Satria Lindy - Content Creator">
   <title>Vicky Satria Lindy | Content Creator</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Gaya untuk header */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      transition: all 0.3s ease-in-out; /* Animasi untuk header */
+      cursor: pointer; /* Tambahkan cursor pointer agar menunjukkan bahwa header bisa diklik */
+    }
+
+    header.clicked {
+      padding: 40px; /* Perbesar padding saat diklik untuk efek slide */
+    }
+
+    header nav {
+      display: none; /* Sembunyikan navigasi awal */
+      transition: all 0.3s ease-in-out;
+    }
+
+    header.clicked nav {
+      display: block; /* Tampilkan navigasi setelah diklik */
+    }
+
+    /* Gaya untuk navigasi */
+    header nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Styling untuk Hero Section */
+    .hero {
+      background-color: #f4f4f4;
+      padding: 50px;
+      text-align: center;
+    }
+
+    /* Styling untuk tombol CTA */
+    .cta-btn {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .cta-btn:hover {
+      background-color: #555;
+    }
+
+    /* Styling untuk section lainnya */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    /* Styling untuk Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Header -->
-  <header>
+  <header id="header">
     <h1>Vicky Satria Lindy</h1>
     <nav>
       <a href="#about">Tentang Saya</a>
@@ -81,5 +146,10 @@
     <p>Follow me on <a href="https://www.instagram.com" target="_blank">Instagram</a>, <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
   </footer>
 
+  <script>
+    document.getElementById("header").addEventListener("click", function() {
+      this.classList.toggle("clicked");
+    });
+  </script>
 </body>
 </html>
