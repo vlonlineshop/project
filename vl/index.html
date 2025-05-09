@@ -1,190 +1,228 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Vicky Satria Lindy | Content Creator Pemula">
-  <title>Vicky Satria Lindy | Content Creator Pemula</title>
-  
-  <!-- AOS CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  
-  <style>
-    /* Reset some default styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    /* Body */
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: linear-gradient(to right, #000000, #0000ff); /* Gradien Hitam ke Biru */
-      color: #fff;
-    }
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
 
-    /* Header */
-    header {
-      background: linear-gradient(to right, #000000, #0000ff); /* Gradien Hitam ke Biru */
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
+/* Header */
+header {
+  background: linear-gradient(135deg, #00bfff, #1e3c72);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
 
-    header h1 {
-      margin-bottom: 10px;
-    }
+header h1 {
+  font-size: 2.5em;
+}
 
-    header p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    /* Navigation Menu */
-    nav {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+nav a:hover {
+  text-decoration: underline;
+}
 
-    nav a {
-      color: white;
-      padding: 10px 20px;
-      margin: 0 10px;
-      text-decoration: none;
-      background: #444;
-      border-radius: 5px;
-    }
+/* Hero Section */
+.hero {
+  background: url('hero-image.jpg') center center no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
 
-    nav a:hover {
-      background: #555;
-    }
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
-    /* Main Section */
-    .main {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      color: #333;
-    }
+.cta-btn {
+  padding: 10px 20px;
+  background-color: #1e3c72;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
-    .main h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+.cta-btn:hover {
+  background-color: #00bfff;
+}
 
-    .about p {
-      text-align: center;
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
+/* Section Styling */
+section {
+  padding: 50px 20px;
+}
 
-    .about img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto;
-    }
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    .cta-btn {
-      display: inline-block;
-      text-align: center;
-      padding: 12px 20px;
-      background: linear-gradient(to right, #000000, #0000ff); /* Gradien Hitam ke Biru */
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 18px;
-    }
+ul {
+  list-style-type: none;
+}
 
-    .cta-btn:hover {
-      background: linear-gradient(to right, #0000ff, #000000); /* Gradien terbalik saat hover */
-    }
+ul li {
+  margin-bottom: 10px;
+}
 
-    /* Footer */
-    footer {
-      background: linear-gradient(to right, #000000, #0000ff); /* Gradien Hitam ke Biru */
-      color: white;
-      padding: 20px;
-      text-align: center;
-      margin-top: 40px;
-    }
+/* Portfolio Section */
+.portfolio-images {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
 
-    footer a {
-      color: #fff;
-      text-decoration: none;
-    }
+.portfolio-images img {
+  width: 30%;
+  border-radius: 5px;
+}
 
-    footer a:hover {
-      color: #ff6347; /* Ubah warna saat hover */
-    }
+.portfolio a {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #00bfff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
-  </style>
-</head>
-<body>
+.portfolio a:hover {
+  background-color: #1e3c72;
+}
 
-  <!-- Header -->
-  <header data-aos="fade-down">
-    <h1>Vicky Satria Lindy</h1>
-    <p>Content Creator Pemula | Membantu Bisnis Anda dengan Konten Kreatif</p>
-  </header>
+/* Testimonials Section */
+.testimonials {
+  background: #e0e0e0;
+  padding: 30px 20px;
+}
 
-  <!-- Navigation -->
-  <nav data-aos="fade-up">
-    <a href="#about">Tentang Saya</a>
-    <a href="#portfolio">Portofolio</a>
-    <a href="#contact">Kontak</a>
-  </nav>
+.testimonials p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
 
-  <!-- Main Content -->
-  <div class="main">
-    
-    <!-- About Me Section -->
-    <section id="about" class="about" data-aos="fade-up">
-      <h2>Tentang Saya</h2>
-      <img src="profile-picture.jpg" alt="Vicky Satria Lindy" data-aos="zoom-in" data-aos-duration="1500">
-      <p>Halo, saya Vicky Satria Lindy, seorang content creator pemula. Saya mulai menekuni dunia pembuatan konten digital untuk membantu bisnis dan individu membangun identitas mereka di dunia online. Fokus saya adalah menciptakan konten yang kreatif dan berkualitas untuk meningkatkan brand awareness.</p>
-      <a href="#contact" class="cta-btn">Hubungi Saya</a>
-    </section>
+.testimonials p:last-child {
+  font-weight: bold;
+}
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" data-aos="fade-up">
-      <h2>Portofolio</h2>
-      <p>Berikut adalah beberapa proyek yang telah saya kerjakan:</p>
-      <ul>
-        <li><a href="https://vlonlineshop.github.io/toko/" target="_blank">Toko VL Online Shop</a></li>
-        <li><a href="https://bigcatminebot.github.io/mini-apps/" target="_blank">Mini Apps</a></li>
-        <li><a href="https://bigcatminebot.github.io/landingpage/" target="_blank">Landing Page</a></li>
-      </ul>
-    </section>
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
 
-    <!-- Contact Section -->
-    <section id="contact" data-aos="fade-up">
-      <h2>Kontak</h2>
-      <p>Jika Anda tertarik bekerja sama atau ingin mendiskusikan proyek Anda, hubungi saya melalui email atau WhatsApp.</p>
-      <a href="mailto:vlbusiness35@gmail.com" class="cta-btn">Email Saya</a>
-      <a href="https://wa.me/085709458101" class="cta-btn">Hubungi via WhatsApp</a>
-    </section>
-    
-  </div>
+.contact a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
-  <!-- Footer -->
-  <footer data-aos="fade-up">
-    <p>&copy; 2025 Vicky Satria Lindy. Semua hak cipta.</p>
-    <p>Follow me on <a href="https://www.instagram.com" target="_blank">Instagram</a>, <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
-  </footer>
+.contact a:hover {
+  background-color: #1e3c72;
+}
 
-  <!-- AOS JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000, // Durasi animasi
-      easing: 'ease-in-out', // Jenis easing animasi
-      once: true // Efek hanya berjalan sekali
-    });
-  </script>
-</body>
-</html>
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e3c72;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 1em;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  .portfolio-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-images img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .contact a {
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 60vh;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav a {
+    margin: 0 5px;
+    font-size: 0.9em;
+  }
+
+  .cta-btn {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+
+  .testimonials p {
+    font-size: 0.9em;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}
