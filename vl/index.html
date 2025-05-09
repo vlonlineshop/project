@@ -3,175 +3,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal Branding Vicky Satria Lindy - Content Creator">
-  <title>Vicky Satria Lindy | Content Creator</title>
+  <meta name="description" content="Vicky Satria Lindy | Content Creator Pemula">
+  <title>Vicky Satria Lindy | Content Creator Pemula</title>
   <style>
-    /* Styling untuk header terpisah dan terkunci */
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to right, #000000, #0000ff); /* Gradien Hitam ke Biru */
+      color: #fff;
+    }
+
+    /* Header */
     header {
-      background-color: #333;
+      background: linear-gradient(to right, #000000, #0000ff); /* Gradien Hitam ke Biru */
       color: white;
       padding: 20px 0;
-      width: 100%;
-      position: fixed; /* Mengunci header di atas */
-      top: 0;
-      left: 0;
-      z-index: 1000; /* Pastikan header berada di atas konten lainnya */
-      box-sizing: border-box;
-      transition: all 0.3s ease-in-out;
+      text-align: center;
     }
 
-    /* Gaya untuk judul header */
     header h1 {
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    /* Navigation Menu */
+    nav {
       text-align: center;
-      margin: 0;
+      margin-bottom: 30px;
     }
 
-    /* Menampilkan navigasi dalam box setelah header diklik */
-    header nav {
-      display: none;
-      text-align: center;
-    }
-
-    /* Membuat efek box dan perubahan warna ketika header diklik */
-    header.clicked {
-      background-color: #444; /* Warna baru saat diklik */
-    }
-
-    header.clicked nav {
-      display: block;
-    }
-
-    header nav a {
-      color: white;
-      margin: 10px;
-      text-decoration: none;
-    }
-
-    header nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Menambahkan margin untuk body agar konten tidak tertutup header */
-    body {
-      margin-top: 100px; /* Beri jarak pada bagian atas konten */
-    }
-
-    /* Styling untuk Hero Section */
-    .hero {
-      background-color: #f4f4f4;
-      padding: 50px;
-      text-align: center;
-    }
-
-    /* Styling untuk tombol CTA */
-    .cta-btn {
-      background-color: #333;
+    nav a {
       color: white;
       padding: 10px 20px;
+      margin: 0 10px;
       text-decoration: none;
+      background: #444;
       border-radius: 5px;
     }
 
-    .cta-btn:hover {
-      background-color: #555;
+    nav a:hover {
+      background: #555;
     }
 
-    /* Styling untuk section lainnya */
-    section {
-      padding: 50px 20px;
+    /* Main Section */
+    .main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .main h2 {
       text-align: center;
+      margin-bottom: 20px;
     }
 
-    /* Styling untuk Footer */
-    .footer {
-      background-color: #333;
+    .about p {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .about img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      text-align: center;
+      padding: 12px 20px;
+      background: linear-gradient(to right, #000000, #0000ff); /* Gradien Hitam ke Biru */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+
+    .cta-btn:hover {
+      background: linear-gradient(to right, #0000ff, #000000); /* Gradien terbalik saat hover */
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(to right, #000000, #0000ff); /* Gradien Hitam ke Biru */
       color: white;
       padding: 20px;
       text-align: center;
+      margin-top: 40px;
     }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ff6347; /* Ubah warna saat hover */
+    }
+
   </style>
 </head>
 <body>
 
   <!-- Header -->
-  <header id="header">
+  <header>
     <h1>Vicky Satria Lindy</h1>
-    <nav>
-      <a href="#about">Tentang Saya</a>
-      <a href="#portfolio">Portofolio</a>
-      <a href="#services">Layanan</a>
-      <a href="#contact">Kontak</a>
-    </nav>
+    <p>Content Creator Pemula | Membantu Bisnis Anda dengan Konten Kreatif</p>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div>
-      <h1>Membantu Bisnis Menonjol dengan Konten Kreatif dan Berkualitas</h1>
-      <a href="#portfolio" class="cta-btn">Cek Portofolio Saya</a>
-    </div>
-  </section>
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">Tentang Saya</a>
+    <a href="#portfolio">Portofolio</a>
+    <a href="#contact">Kontak</a>
+  </nav>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>Tentang Saya</h2>
-    <p>Saya adalah Vicky Satria Lindy, seorang content creator dengan pengalaman dalam menciptakan konten digital untuk berbagai platform. Fokus saya adalah membantu bisnis dan individu untuk berkembang melalui konten yang kreatif dan menarik.</p>
-  </section>
+  <!-- Main Content -->
+  <div class="main">
+    
+    <!-- About Me Section -->
+    <section id="about" class="about">
+      <h2>Tentang Saya</h2>
+      <img src="profile-picture.jpg" alt="Vicky Satria Lindy">
+      <p>Halo, saya Vicky Satria Lindy, seorang content creator pemula. Saya mulai menekuni dunia pembuatan konten digital untuk membantu bisnis dan individu membangun identitas mereka di dunia online. Fokus saya adalah menciptakan konten yang kreatif dan berkualitas untuk meningkatkan brand awareness.</p>
+      <a href="#contact" class="cta-btn">Hubungi Saya</a>
+    </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>Layanan Saya</h2>
-    <p>Saya menawarkan layanan konsultasi untuk membantu Anda mencapai tujuan bisnis Anda, mulai dari pembuatan website hingga memulai bisnis tanpa modal.</p>
-    <ul>
-      <li>Konsultasi Pembuatan Website dengan ChatGPT</li>
-      <li>Memulai Bisnis dari 0: Langkah-langkah Praktis untuk Sukses</li>
-      <li>Layanan Delivery: Solusi Pengiriman Cepat untuk Bisnis Anda</li>
-      <li>Bisnis Tanpa Modal: Cara Membangun Bisnis dengan Sumber Daya Terbatas</li>
-    </ul>
-    <a href="#contact" class="cta-btn">Hubungi Saya untuk Konsultasi</a>
-  </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>Portofolio</h2>
+      <p>Berikut adalah beberapa proyek yang telah saya kerjakan:</p>
+      <ul>
+        <li><a href="https://vlonlineshop.github.io/toko/" target="_blank">Toko VL Online Shop</a></li>
+        <li><a href="https://bigcatminebot.github.io/mini-apps/" target="_blank">Mini Apps</a></li>
+        <li><a href="https://bigcatminebot.github.io/landingpage/" target="_blank">Landing Page</a></li>
+      </ul>
+    </section>
 
-  <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio slide">
-  <h2>Portofolio Saya</h2>
-  <div>
-    <p>Berikut adalah beberapa proyek yang telah saya kerjakan:</p>
-    <ul>
-      <li><a href="https://vlonlineshop.github.io/toko/" target="_blank">Toko VL Online Shop</a></li>
-      <li><a href="https://bigcatminebot.github.io/mini-apps/" target="_blank">Mini Apps</a></li>
-      <li><a href="https://bigcatminebot.github.io/landingpage/" target="_blank">Landing Page</a></li>
-    </ul>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Kontak</h2>
+      <p>Jika Anda tertarik bekerja sama atau ingin mendiskusikan proyek Anda, hubungi saya melalui email atau WhatsApp.</p>
+      <a href="mailto:vlbusiness35@gmail.com" class="cta-btn">Email Saya</a>
+      <a href="https://wa.me/085709458101" class="cta-btn">Hubungi via WhatsApp</a>
+    </section>
+    
   </div>
-  <a href="#contact" class="cta-btn">Lihat Semua Proyek</a>
-</section>
-
-
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <h2>Apa Kata Mereka?</h2>
-    <p>"Bekerja dengan Vicky adalah pengalaman yang luar biasa! Konten yang dihasilkan sangat menarik dan meningkatkan engagement bisnis saya."</p>
-    <p>- Nama Klien, Posisi</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Kontak</h2>
-    <p>Siap Meningkatkan Bisnismu dengan Konten Kreatif? Hubungi Saya Sekarang!</p>
-    <a href="mailto:vlbusiness35@gmail.com" class="cta-btn">Email Saya</a>
-    <a href="https://wa.me/085709458101" class="cta-btn" style="background-color: #25d366;">Hubungi via WhatsApp</a>
-  </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <p>&copy; 2025 Vicky Satria Lindy. Semua hak cipta.</p>
     <p>Follow me on <a href="https://www.instagram.com" target="_blank">Instagram</a>, <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
   </footer>
 
-  <script>
-    // Menambahkan event listener untuk klik pada header
-    document.getElementById("header").addEventListener("click", function() {
-      this.classList.toggle("clicked");
-    });
-  </script>
 </body>
 </html>
